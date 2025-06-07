@@ -2,7 +2,7 @@ import Book from "./Book";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pt-32 bg-[#272924] text-white">
+    <div className="min-h-screen font-lora pt-32 bg-[#272924] text-white">
       {/* Main content */}
       <div className="flex justify-center min-h-screen px-8">
         <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4 text-lg leading-relaxed">
-              <p>
+              <p className="text-base">
                 Modern blockchain applications are often constrained by a
                 trade-off between user experience and trust. Chainless Apps
                 present a new paradigm of application architecture that
