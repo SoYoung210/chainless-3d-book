@@ -106,15 +106,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Bottom navigation */}
-      <div className="fixed bottom-8 left-8">
-        <div className="flex flex-col space-y-2">
-          <div className="w-6 h-6 border border-white/50 flex items-center justify-center">
-            <span className="text-xs">?</span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
