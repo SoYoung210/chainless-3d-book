@@ -2,9 +2,9 @@ import Book from "./Book";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#272924] text-white">
+    <div className="min-h-screen pt-32 bg-[#272924] text-white">
       {/* Main content */}
-      <div className="flex items-center justify-center min-h-screen px-8">
+      <div className="flex justify-center min-h-screen px-8">
         <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left side - 3D Book */}
           <div className="flex justify-center lg:justify-end">
@@ -17,62 +17,90 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                The Scaling Era: An Oral History of AI, 2019–2025
+                Chainless Apps:
               </h1>
-              <p className="text-xl text-blue-200 italic">
-                Dwarkesh Patel with Gavin Leech
-              </p>
-            </div>
-
-            <div className="inline-block">
-              <button className="border border-white px-6 py-3 text-white hover:bg-white hover:text-blue-900 transition-colors duration-200">
-                Living cover
-              </button>
+              <h2 className="text-xl">
+                A Modular Framework for Building Apps with Web2 Capability and
+                Web3 Trust
+              </h2>
             </div>
 
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                How did we build large language models? How do they think,{" "}
-                <em>if</em> they think? What will the world look like if we have
-                billions of AIs that are as smart as humans, or even smarter? In
-                a series of in-depth interviews with leading AI researchers and
-                company founders—including Anthropic CEO Dario Amodei, DeepMind
-                cofounder Denis Hassabis, OpenAI cofounder Ilya Sutskever, MIRI
-                cofounder Eliezer Yudkowsky, and Meta CEO Mark
-                Zuckerberg—Dwarkesh Patel provides the first comprehensive and
-                contemporary portrait of the technology that is transforming our
-                world. Drawn from his interviews on the{" "}
-                <em>Dwarkesh Podcast</em>, these curated excerpts range from the
-                technical details of how LLMs work to the possibility of an AI
-                takeover or explosive economic growth. It also includes 170+
-                definitions and visualizations, classic essays on the theme, and
-                previously unpublished interviews. <em>The Scaling Era</em>{" "}
-                offers readers unprecedented insight into a transformative
-                moment in AI&apos;s development—and a vision of what comes next.
+                Modern blockchain applications are often constrained by a
+                trade-off between user experience and trust. Chainless Apps
+                present a new paradigm of application architecture that
+                separates execution, trust, bridging, and settlement into
+                distinct compostable layers. This enables app-specific
+                sequencing, verifiable off-chain computation, chain-agnostic
+                asset and message routing via Agglayer, and finality on Ethereum
+                — resulting in fast Web2-like UX with Web3-grade verifiability.
+                Although consensus mechanisms have historically underpinned
+                verifiable computation, the advent of zkVMs and decentralized
+                validation services opens up new trust models for developers.
+                Chainless Apps leverage this evolution to offer modular,
+                scalable applications that maintain interoperability with the
+                broader blockchain ecosystem while allowing domain-specific
+                trade-offs.
               </p>
             </div>
 
             <div className="space-y-6">
-              <div>
-                <p className="text-xl italic mb-4">
-                  Preorder the hardcover from Stripe Press to receive a PDF
-                  version now
-                </p>
-              </div>
-
               <div className="space-y-3">
-                <button className="w-full max-w-sm border border-white px-6 py-4 text-left hover:bg-white hover:text-blue-900 transition-colors duration-200 flex justify-between items-center">
-                  <span>Preorder on Stripe (US) $35</span>
-                  <span>↗</span>
-                </button>
-                <button className="w-full max-w-sm border border-white px-6 py-4 text-left hover:bg-white hover:text-blue-900 transition-colors duration-200 flex justify-between items-center">
-                  <span>Preorder on Stripe (non-US) $35</span>
-                  <span>↗</span>
-                </button>
+                <a
+                  href="https://arxiv.org/pdf/2505.22989"
+                  className="group relative w-full text-left max-w-sm border border-white pl-6 duration-200 flex items-center"
+                >
+                  <span
+                    style={{
+                      height: 56,
+                    }}
+                    className="w-1 bg-white absolute left-0 top-0 h-full scale-x-0 group-hover:scale-x-100 transition-transform"
+                  />
+                  <div className="flex w-full items-center gap-2">
+                    <span
+                      style={{
+                        transformOrigin: 0,
+                      }}
+                      className="flex w-full items-center gap-2 group-hover:translate-x-1 transition-transform"
+                    >
+                      Read whitepaper
+                    </span>
+                    <div className="ml-auto px-2 border-l py-4 bg-[#272924] group-hover:bg-white border-white transition-colors text-white group-hover:text-[#272924]">
+                      <span>↗</span>
+                    </div>
+                  </div>
+                </a>
               </div>
 
-              <div className="pt-4">
-                <p className="text-xl italic">Buy the ebook</p>
+              {/* Author Section */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-[60px] h-[1px] bg-white" />
+                  <h3 className="text-xl font-bold italic">Authors</h3>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-base leading-relaxed">
+                    <strong>Brain Seong</strong> is CResearch & DevRel Eng
+                    @0xPolygon
+                  </p>
+
+                  <div className="flex space-x-4">
+                    <a
+                      href="https://x.com/BrianSeong99"
+                      className="border border-white px-4 py-2 text-sm hover:bg-white hover:text-[#272924] transition-colors duration-200"
+                    >
+                      X
+                    </a>
+                    <a
+                      href="https://brian-seong.ghost.io/"
+                      className="border border-white px-4 py-2 text-sm hover:bg-white hover:text-[#272924] transition-colors duration-200"
+                    >
+                      Website
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
