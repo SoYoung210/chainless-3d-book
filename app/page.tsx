@@ -2,7 +2,7 @@ import Book from "./Book";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-800 to-blue-900 text-white">
+    <div className="min-h-screen bg-[#272924] text-white">
       {/* Main content */}
       <div className="flex items-center justify-center min-h-screen px-8">
         <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
