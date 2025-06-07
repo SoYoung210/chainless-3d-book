@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#272924] text-white">
       {/* Main content */}
       <div className="flex items-center justify-center min-h-screen px-8">
-        <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left side - 3D Book */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full">
