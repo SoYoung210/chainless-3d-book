@@ -13,7 +13,7 @@ function Model({ url, onLoad }: { url: string; onLoad: () => void }) {
     }
   }, [scene, onLoad]);
 
-  return <primitive object={scene} rotation={[0.9, 0.6, -0.5]} />;
+  return <primitive object={scene} rotation={[1, 0.4, -0.5]} />;
 }
 
 export default function Book() {
