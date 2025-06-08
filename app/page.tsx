@@ -82,8 +82,8 @@ export default function Home() {
 
                 <div className="space-y-4">
                   <p className="text-base leading-relaxed">
-                    <strong>Brain Seong</strong> is CResearch & DevRel Eng
-                    @0xPolygon
+                    <strong>Brain Seong</strong> is a Research & DevRel Engineer
+                    at Polygon.
                   </p>
 
                   <div className="flex space-x-4">
